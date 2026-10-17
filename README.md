@@ -8,9 +8,9 @@ The goal of this project is to demonstrate my practical software testing skills,
 
 ## 🛠️ Project Scope & Tested Functionalities
 
-The test suite covers critical user paths (happy paths) and negative scenarios within the e-commerce system:
+The test suite covers positive and negative scenarios within the e-commerce system:
 1. **Cart Management:** Verifying the correctness of adding available items to the shopping cart, total price calculations, and item counts.
-2. **Stock Constraints (Negative Path):** Ensuring that out-of-stock items cannot be added to the cart and verifying the availability of back-in-stock notification forms.
+2. **Item out-of-stock (Negative Path):** Ensuring that out-of-stock items cannot be added to the cart and verifying the availability of back-in-stock notification forms.
 3. **Localization & UI:** Testing the currency switching functionality (EUR to USD) and verifying dynamic price conversion across the storefront.
 4. **Account Management:** Validating the complete user registration flow, account creation, and newsletter subscription integration.
 
