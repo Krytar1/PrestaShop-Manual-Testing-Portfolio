@@ -1,6 +1,6 @@
 # Manual Testing Portfolio: PrestaShop E-commerce Platform
 
-This repository contains functional manual test cases designed and executed for an e-commerce platform based on **PrestaShop** (`https://coderslab.pl`). 
+This repository contains functional manual test cases designed and executed for an e-commerce platform based on **PrestaShop** (`https://dev-mystore-testlab.coderslab.pl/index.php`). 
 
 The goal of this project is to demonstrate my practical software testing skills, including test case design, requirement analysis, business logic verification, and clear documentation practices aligned with **ISTQB standards**.
 
@@ -46,7 +46,7 @@ The test suite covers critical user paths (happy paths) and negative scenarios w
 |---|---|---|---|
 | 1 | Search for the specific out-of-stock item using the search bar. | "Tiro 25 Competition Training Jersey Kids" | The product details page opens successfully. |
 | 2 | Select a size that is currently out of stock. | Size: 176 | The selected size is visually highlighted as unavailable. The "Add to Cart" button becomes disabled or disappears. |
-| 3 | Verify the presence of the stock notification option. | N/A | A "Notify Me" button/form appears, allowing the user to subscribe for an email alert when the size is back in stock. |
+| 3 | Verify the presence of the stock notification option. | N/A | A "Notify Me" button appears, allowing the user to subscribe for an email alert when the size is back in stock. |
 
 * **Postconditions:** The unavailable item cannot be added to the shopping cart, and the back-in-stock subscription form is fully visible.
 
@@ -78,16 +78,10 @@ The test suite covers critical user paths (happy paths) and negative scenarios w
 
 | # | Test Steps | Test Data | Expected Results |
 |---|---|---|---|
-| 1 | Click the **"Sign in"** link in the top header. | N/A | The authentication/sign-in page opens successfully. |
+| 1 | Click the **"Sign in"** link in the top header. | N/A | The sign-in page opens successfully. |
 | 2 | Click the **"No account? Create one here"** link. | N/A | The registration form page is displayed. |
 | 3 | Fill out the form with valid data, check the terms and conditions box, and check the newsletter subscription box. | **First name:** Anna<br>**Last name:** Xyz-Abc<br>**Email:** qaz@wp.pl<br>**Password:** 123!@#qaZ | The fields are filled successfully, and the checkboxes are ticked. |
 | 4 | Click the **"Save"** button. | N/A | The account is created successfully. The user is automatically logged in, and the name "Anna" is visible in the top header. |
 
 * **Postconditions:** The new user account is active and authenticated, and the email address is subscribed to the newsletter.
 
----
-
-## 📈 Key Takeaways & Skills Demonstrated
-* **Test Case Design:** Applied functional testing techniques to break down user actions into modular, reusable steps.
-* **Boundary & Negative Testing:** Handled out-of-stock scenarios to confirm proper error handling and UI restrictions.
-* **E-commerce Domain Knowledge:** Demonstrated understanding of critical retail flows (checkout process, user account registration, multi-currency conversion).
